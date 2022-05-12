@@ -48,7 +48,7 @@ const createUser = async (
 // returns true of the userEmail already has a document
 // tied to it in Firestore and false otherwise
 // ========================================================
-const userAlreadyExists = async (userEmail) => {
+const checkUserAlreadyExists = async (userEmail) => {
   const q = query(usersCollectionRef, where('userEmail', '==', userEmail));
   const res = await getDocs(q);
   return res.size === 0 ? false : true;
@@ -168,4 +168,4 @@ const computeRankings = async (userEmail) => {
   return rankedUsersList;
 };
 
-export { createUser, userAlreadyExists, computeRankings };
+export { createUser, checkUserAlreadyExists, computeRankings };
