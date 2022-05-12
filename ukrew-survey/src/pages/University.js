@@ -1,14 +1,14 @@
 import React from 'react'
-import MadlibForm from '../components/MadlibForm'
+import UniversityForm from '../components/UniversityForm'
 import TemplatePage from '../components/TemplatePage'
 
 
-function Madlib() {
+function University() {
   return (
     <div>
       <TemplatePage 
-        content={<MadlibForm />} 
-        left={"/login"} right={"/schoolbool"} 
+        content={<UniversityForm />} 
+        left={"/schoolbool"} right={"/petbool"} 
         leftAction={() => console.log("left")} 
         rightAction={() => console.log("right")} 
       />
@@ -16,4 +16,4 @@ function Madlib() {
   )
 }
 
-export default Madlib
+export default University

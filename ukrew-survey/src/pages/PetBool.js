@@ -1,14 +1,14 @@
 import React from 'react'
-import MadlibForm from '../components/MadlibForm'
+import PetBoolForm from '../components/PetBoolForm'
 import TemplatePage from '../components/TemplatePage'
 
 
-function Madlib() {
+function PetBool() {
   return (
     <div>
       <TemplatePage 
-        content={<MadlibForm />} 
-        left={"/login"} right={"/schoolbool"} 
+        content={<PetBoolForm />} 
+        left={"/school"} right={"/"} 
         leftAction={() => console.log("left")} 
         rightAction={() => console.log("right")} 
       />
@@ -16,4 +16,4 @@ function Madlib() {
   )
 }
 
-export default Madlib
+export default PetBool
