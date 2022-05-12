@@ -1,10 +1,17 @@
-import './App.css';
+import './styles/App.css';
+import Login from './pages/Login.js'
+import Home from './pages/Home.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+// Add routes here. 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

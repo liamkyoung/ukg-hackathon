@@ -10,4 +10,17 @@ Note: Make sure to have node installed.
 - create a file ".env" (used for environment variables)
 - npm start
 
+### directory structure
+##### Components
+- /src/components
+
+##### Pages
+- /src/pages/
+
+##### Assets
+- /public/assets
+
+##### Styles
+- /src/styles
+
 Done!
