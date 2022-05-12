@@ -51,9 +51,6 @@ const createUser = async (
 const userAlreadyExists = async (userEmail) => {
   const q = query(usersCollectionRef, where('userEmail', '==', userEmail));
   const res = await getDocs(q);
-
-  console.log(res.size === 0 ? false : true);
-
   return res.size === 0 ? false : true;
 }
 
@@ -167,8 +164,6 @@ const computeRankings = async (userEmail) => {
   rankedUsersList.sort((a, b) => {
     return b.score - a.score;
   });
-
-  console.log(rankedUsersList);
 
   return rankedUsersList;
 };
