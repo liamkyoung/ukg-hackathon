@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    name: 'user',
+    name: '',
     basicInformation: {
         name: '',
         role: '',
@@ -16,14 +16,14 @@ const initialState = {
     pets: {
         owns: false,
         petTypes: {
-            "dogs": 0,
-            "cats": 0,
-            "birds": 0,
-            "snakes": 0,
-            "fish": 0,
-            "rabbits": 0,
-            "hamsters": 0,
-            "other": 0
+            "dogs": false,
+            "cats": false,
+            "birds": false,
+            "snakes": false,
+            "fish": false,
+            "rabbits": false,
+            "hamsters": false,
+            "other": false
         }
     },
     interests: [],
@@ -42,10 +42,9 @@ export const userSlice = createSlice({
         addInterests: (state, action) => {
             state.interests = [...state.interests, action.payload]
         },
-
     }
 })
 
-export const { addBasicInfo } = userSlice.actions
+export const { addBasicInfo, addInterests } = userSlice.actions
 
 export default userSlice.reducer

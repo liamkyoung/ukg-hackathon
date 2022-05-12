@@ -5,26 +5,25 @@ import { ArrowNarrowRightIcon } from '@heroicons/react/outline'
 import { ArrowNarrowLeftIcon } from '@heroicons/react/outline'
 import { Link } from 'react-router-dom'
 
-function TemplatePage({ content, left, right, leftAction, rightAction }) {
+function TemplatePage({ title, content, left, right, leftAction, rightAction }) {
   return (
     <div className='background'>
         <div className='main-container'>
             <div className='title'>
-                <h1>Getting to Know U</h1>
+                <h1>{title}</h1>
             </div>
             {content}
             <div className='arrow-container'>
-                    <button onClick={rightAction}>
-                        <Link to={left}>
+                    <Link to={left}>
+                        <button onClick={rightAction}>
                             <ArrowNarrowLeftIcon className='arrow'/>
-                        </Link>
-                    </button>
-                
-                    <button onClick={leftAction}>
-                        <Link to={right}>
+                        </button>
+                    </Link>
+                    <Link to={right}>
+                        <button onClick={leftAction}>
                             <ArrowNarrowRightIcon className='arrow'/>
-                        </Link>
-                    </button>
+                        </button>
+                    </Link>
             </div>
         </div>
         <div className='logo'>
