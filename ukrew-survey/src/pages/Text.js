@@ -6,9 +6,11 @@ import TemplatePage from '../components/TemplatePage'
 function Text() {
   return (
     <div>
-      <TemplatePage 
+      <TemplatePage
+        title="Getting to Know U"
         content={<TextForm />} 
-        left={"/schoolbool"} right={"/petbool"} 
+        left={"/refInterests"} 
+        right={"/icons"} 
         leftAction={() => console.log("left")} 
         rightAction={() => console.log("right")}
       />
