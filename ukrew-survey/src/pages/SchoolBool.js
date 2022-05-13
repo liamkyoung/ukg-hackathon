@@ -7,6 +7,7 @@ function SchoolBool() {
   return (
     <div>
       <TemplatePage 
+        title="Getting to Know U"
         content={<SchoolBoolForm />} 
         left={"/madlib"} right={"/school"} 
         leftAction={() => console.log("left")} 
