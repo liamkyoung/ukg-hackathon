@@ -8,6 +8,7 @@ import PetBool from './pages/PetBool';
 import Text from './pages/Text';
 import Interests from './pages/Interests';
 import RefinedInterests from './pages/RefinedInterests.js'
+import ID from './pages/ID.js'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Pets from './pages/Pets';
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/pets' element={<Pets />} />
         <Route path='/interests' element={<Interests />} />
         <Route path='/refInterests' element={<RefinedInterests />} />
+        <Route path='/ID' element={<ID />} />
       </Routes>
     </BrowserRouter>
   );
