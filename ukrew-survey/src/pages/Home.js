@@ -14,7 +14,7 @@ function Home() {
                 <h2>Where the U Meets the Krew</h2>
             </div>
             <Link to="/madlib">
-            <button type="button"> Begin! </button>
+            <button type="begin"> Begin! </button>
             </Link>
             <div>
         <img  class= "image team" alt='team vector image' src={process.env.PUBLIC_URL+"/assets/team.png"} />

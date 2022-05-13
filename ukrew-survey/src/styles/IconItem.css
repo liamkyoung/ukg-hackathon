@@ -1,0 +1,30 @@
+.icon-button {
+    background-color: #30CEBB;
+    margin: 10% 15% 15% 30%;
+    border-radius: 20px;
+    padding: 2px;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+}
+
+.icon-button-true {
+    background-color: #006d6b;
+    margin: 10% 15% 15% 30%;
+    border-radius: 15px;
+    padding: 2px;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+
+}
+
+.icon-button:hover {
+    background-color: #006d6b;
+
+}
+
+.icon-image {
+    padding-top: 10px;
+}
+

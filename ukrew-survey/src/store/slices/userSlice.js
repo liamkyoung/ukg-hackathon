@@ -74,10 +74,13 @@ export const userSlice = createSlice({
         },
         updateFavorite: (state, action) => {
             state.favorite_interest = action.payload
-        }
+        },
+        addIcon: (state, action) => {
+            state.emoji = action.payload
+        },
     }
 })
 
-export const { addBasicInfo, addInterests, deleteInterests, addDogs, addCats, addBirds, addSnakes, addFish, addRabbits, addHamsters, addOther, togglePets, updateFavorite } = userSlice.actions
+export const { addBasicInfo, addInterests, deleteInterests, addDogs, addCats, addBirds, addSnakes, addFish, addRabbits, addHamsters, addOther, togglePets, updateFavorite, addIcon } = userSlice.actions
 
 export default userSlice.reducer
