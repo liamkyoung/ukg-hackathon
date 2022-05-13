@@ -1,0 +1,13 @@
+.fav-item {
+    position: relative;
+    z-index: 0;
+}
+
+.heart {
+    height: 50px;
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    z-index: 100; 
+}
