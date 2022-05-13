@@ -4,10 +4,14 @@ import IconItem from './IconItem'
 import { addIcon } from '../store/slices/userSlice.js'
 import { createUser } from '../firebase/firebase-db'
 import { useSelector } from 'react-redux'
+import { Navigate } from 'react-router-dom'
 
 function IconsScreen() {
   const url = process.env.PUBLIC_URL + "/assets/"
   const user = useSelector(state => state.user)
+  const rankingUrl = '/rankings/' + user.email
+  const [button, setButton] = useState(false)
+
   const { basicInformation } = user
   const { college } = user
   const { pets } = user
@@ -18,16 +22,22 @@ function IconsScreen() {
       if (pets.petTypes[property])
           petArr.push(property)
   }
+
   console.log("Basic Info", basicInformation)
   console.log("College", college)
   console.log("Pets", petArr)
+  console.log("Email", user.email)
+
+
+  if (button)
+    return <Navigate to={rankingUrl} />
 
   return (
     <div>
         <h1>Please select the icon that best represents you</h1>
         <button className='submit-btn' onClick={() => {
           createUser(
-            basicInformation.name,
+            user.email,
             basicInformation.name, 
             basicInformation.role,
             basicInformation.team,
@@ -40,6 +50,8 @@ function IconsScreen() {
             user.custom_message,
             user.emoji
           )
+
+          setButton(true)
         }}>
           Submit Results!</button>
         

@@ -12,12 +12,7 @@ function MadlibForm() {
       platform: '',
       handle: ''
   })
-//   const [name, setName] = useState('')
-//   const [role, setRole] = useState('')
-//   const [team, setTeam] = useState('')
-//   const [platform, setPlatform] = useState('')
-//   const [handle, setHandle] = useState('')
-      
+    
   return (
     <div className='form-content'>
         <div className=''>Tell us a little bit about yourself...</div>

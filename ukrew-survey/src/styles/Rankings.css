@@ -1,4 +1,4 @@
-.user-container {
+.user-container-ranking {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,13 +7,17 @@
   background-color: #d8d8d8;
   padding: 2rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.main-container {
+.main-container-ranking {
   gap: 1.7em;
   padding: 0 2rem 2rem;
-  height: auto;
-  margin-top: 80vh;
+  height: min-content;
+  margin-top: 90%;
+  margin-bottom: 5vh;
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
 
 body {
@@ -24,7 +28,7 @@ body {
   padding-bottom: 2rem;
 }
 
-.score {
+.score-ranking {
   background-color: #2cd5c4;
   padding: 1rem;
   border-radius: 3rem;
@@ -38,9 +42,16 @@ body {
   align-items: center;
 }
 
-.text-content {
+.text-content-ranking {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
+  flex-grow: 1;
+}
+
+.title-ranking {
+  font-weight: 800;
+  font-size: 24px;
+  padding: 5%;
 }

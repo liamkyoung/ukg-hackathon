@@ -46,7 +46,7 @@
     padding-bottom: 10px;
 }
 
-button.begin{
+button.begin {
     align-self: center;
     height: 30px;
     width: 90px;
@@ -54,9 +54,9 @@ button.begin{
     background-color: #2CD5C4;
     border-radius: 8px;
     font-weight: 600;
+    cursor: pointer;
 
 }
 img.team{
     max-width: 55%;
-    
 }
