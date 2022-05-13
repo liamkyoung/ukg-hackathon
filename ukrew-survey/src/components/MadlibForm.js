@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 import '../styles/MadlibForm.css'
-import { useSelector, useDispatch } from 'react-redux'
 import { addBasicInfo } from '../store/slices/userSlice.js'
+import { useDispatch } from 'react-redux'
 
 function MadlibForm() {
-  const [name, setName] = useState('')
-  const [role, setRole] = useState('')
-  const [team, setTeam] = useState('')
-  const [platform, setPlatform] = useState('')
-  const [handle, setHandle] = useState('')
-  const basicInfo = useSelector(state => state.user)
   const dispatch = useDispatch()
+  const [userInfo, setUserInfo] = useState({
+      name: '',
+      role: '',
+      team: '',
+      platform: '',
+      handle: ''
+  })
+//   const [name, setName] = useState('')
+//   const [role, setRole] = useState('')
+//   const [team, setTeam] = useState('')
+//   const [platform, setPlatform] = useState('')
+//   const [handle, setHandle] = useState('')
       
   return (
     <div className='form-content'>
@@ -20,9 +26,9 @@ function MadlibForm() {
                 <span>
                     <input
                         type="text"
-                        value={name}
+                        value={userInfo.name}
                         placeholder="name"
-                        onChange={(event) => setName(event.target.value)}
+                        onChange={(event) => setUserInfo(info => ({...info, name: event.target.value}))}
                     >
                     </input>
                 </span>
@@ -30,9 +36,9 @@ function MadlibForm() {
                 <span>
                     <input
                         type="text"
-                        value={role}
+                        value={userInfo.role}
                         placeholder="role"
-                        onChange={(event) => setRole(event.target.value)}
+                        onChange={(event) => setUserInfo(info => ({...info, role: event.target.value}))}
                     >
                     </input>
                 </span>
@@ -43,8 +49,8 @@ function MadlibForm() {
                         <input
                             type="text"
                             placeholder="team name"
-                            value={team}
-                            onChange={(event) => setTeam(event.target.value)}
+                            value={userInfo.team}
+                            onChange={(event) => setUserInfo(info => ({...info, team: event.target.value}))}
                         >
                         </input>
                     </span>
@@ -56,8 +62,8 @@ function MadlibForm() {
                     <input
                         type="text"
                         placeholder="platform"
-                        value={platform}
-                        onChange={(event) => setPlatform(event.target.value)}
+                        value={userInfo.platform}
+                        onChange={(event) => setUserInfo(info => ({...info, platform: event.target.value}))}
                     >
                     </input>
                 </span>
@@ -65,13 +71,23 @@ function MadlibForm() {
                 <span className='last'>
                     <input
                         type="text"
-                        value={handle}
+                        value={userInfo.handle}
                         placeholder="handle"
-                        onChange={(event) => setHandle(event.target.value)}
+                        onChange={(event) => setUserInfo(info => ({...info, handle: event.target.value}))}
                     >
                     </input>
                 </span>
                 <div>.</div>
+                <button
+                    type="submit"
+                    onClick={(e) => {
+                        console.log(userInfo)
+                        dispatch(addBasicInfo(userInfo))
+                        e.preventDefault()
+                    }}
+                >
+                    Submit
+                </button>
             </div>
         </form>
     </div>
