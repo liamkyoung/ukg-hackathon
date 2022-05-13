@@ -11,6 +11,8 @@ import RefinedInterests from './pages/RefinedInterests.js'
 import Rankings from './pages/Rankings'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Pets from './pages/Pets';
+import Icons from './pages/Icons';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Add routes here. 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         <Route path='/interests' element={<Interests />} />
         <Route path='/refInterests' element={<RefinedInterests />} />
         <Route path='/rankings/:email' element={<Rankings />} />
+        <Route path='/icons' element={<Icons />} />
       </Routes>
     </BrowserRouter>
   );

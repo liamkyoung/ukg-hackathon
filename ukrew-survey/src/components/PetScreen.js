@@ -9,7 +9,7 @@ function PetScreen() {
   const url = process.env.PUBLIC_URL + "/assets/"
   return (
     <div>
-        <h1>Please select the pets you own</h1>
+        <h1>Please select your pets</h1>
         <div className='container'>
             <PetButton type={"Dogs"} image={url+'dogs.png'} handler={addDogs}/>
             <PetButton type={"Cats"} image={url+'cats.png'} handler={addCats}/>

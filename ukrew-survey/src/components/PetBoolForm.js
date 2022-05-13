@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/PetBoolForm.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { addBasicInfo } from '../store/slices/userSlice.js'
+import { Link } from 'react-router-dom'
 
 function PetBoolForm() {
   const [petBool, setPetBool] = useState('')
@@ -12,8 +12,8 @@ function PetBoolForm() {
     <div className='form-content'>
         <div className=''>Do you have pet(s)?</div>
         <form>
-            <button class="button"onClick={() => setPetBool("Y")}>Yes</button>
-            <button class="button"onClick={() => setPetBool("N")}>No</button>  
+        <Link to={"/pets"}><button class="button"onClick={() => setPetBool("Y")}>Yes</button></Link>
+        <Link to={"/interests"}><button class="button"onClick={() => setPetBool("N")}>No</button>  </Link>
         </form>
     </div>
   )

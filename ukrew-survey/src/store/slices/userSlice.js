@@ -7,7 +7,7 @@ const initialState = {
         role: '',
         team: '',
         platform: '',
-        address: '',
+        handle: '',
     },
     college: {
         attending: true,
@@ -74,10 +74,19 @@ export const userSlice = createSlice({
         },
         updateFavorite: (state, action) => {
             state.favorite_interest = action.payload
+        },
+        addIcon: (state, action) => {
+            state.emoji = action.payload
+        },
+        setMessageText: (state, action) => {
+            state.custom_message = action.payload
+        },
+        updateSchool: (state, action) => {
+            state.college.name = action.payload
         }
     }
 })
 
-export const { addBasicInfo, addInterests, deleteInterests, addDogs, addCats, addBirds, addSnakes, addFish, addRabbits, addHamsters, addOther, togglePets, updateFavorite } = userSlice.actions
+export const { updateSchool, addBasicInfo, addInterests, deleteInterests, addDogs, addCats, addBirds, addSnakes, addFish, addRabbits, addHamsters, addOther, togglePets, updateFavorite, addIcon, setMessageText } = userSlice.actions
 
 export default userSlice.reducer

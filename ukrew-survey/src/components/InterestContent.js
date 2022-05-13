@@ -3,7 +3,7 @@ import InterestItem from './InterestItem'
 import '../styles/InterestContent.css'
 
 const interests = ["Video Games", "Soccer", "Movies", "Travel", "TV Shows", "Shopping", "Chess", "Photography", "Hiking", "Basketball", "Football",
-    "Baseball", "Outdoor Activities", "Coding", "Piano", "Tabltop Games", "Dance", "Anime", "Music", "Other Sports"]
+    "Baseball", "Outdoor Activities", "Coding", "Piano", "Tabletop Games", "Dance", "Anime", "Music", "Other Sports"]
 
 function InterestContent () {
   return (

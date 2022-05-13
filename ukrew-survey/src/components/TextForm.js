@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/TextForm.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { addBasicInfo } from '../store/slices/userSlice.js'
+import { setMessageText } from '../store/slices/userSlice.js'
 
 function UniversityForm() {
   const [bodyText, setBodyText] = useState('')
@@ -18,7 +18,10 @@ function UniversityForm() {
                         type="text"
                         value={bodyText}
                         placeholder="I have a dog named..."
-                        onChange={(event) => setBodyText(event.target.value)}
+                        onChange={(event) => {
+                            setBodyText(event.target.value)
+                            dispatch(setMessageText(event.target.value))
+                        }}
                     >
                     </textarea>
                 </span>

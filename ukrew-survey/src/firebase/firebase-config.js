@@ -1,15 +1,5 @@
 import { initializeApp } from 'firebase/app';
 
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyCCFhrc1gieHtK5Fagk9Nny4vtcPLuPyF4',
-//   authDomain: 'fire-testing-98b0b.firebaseapp.com',
-//   projectId: 'fire-testing-98b0b',
-//   storageBucket: 'fire-testing-98b0b.appspot.com',
-//   messagingSenderId: '583012326436',
-//   appId: '1:583012326436:web:22c98bd3f5dd1e0a7bccb1',
-//   measurementId: 'G-JEZJW979S6',
-// };
-
 const firebaseConfig = {
   apiKey: "AIzaSyASPUEurYWgYuCpdtgD5yxFPAS2vEWzLVQ",
   authDomain: "ukrew-mingle.firebaseapp.com",
