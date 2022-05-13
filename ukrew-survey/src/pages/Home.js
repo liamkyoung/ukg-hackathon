@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className='background'>
-        <div className='main-container'>
-            <div className='title'>
+        <div className='main-container-home'>
+            <div className='title-home'>
                 <h1>UKrew Mingle</h1>
             </div>
             <div className='phrase'>
