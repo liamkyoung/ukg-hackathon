@@ -22,8 +22,8 @@ function App() {
         <Route path='/schoolbool' element={<SchoolBool />} />
         <Route path='/school' element={<University />} />
         <Route path='/petbool' element={<PetBool />} />
-        <Route path='/text' element={<Text />} />
         <Route path='/pets' element={<Pets />} />
+        <Route path='/text' element={<Text />} />
         <Route path='/interests' element={<Interests />} />
         <Route path='/refInterests' element={<RefinedInterests />} />
       </Routes>

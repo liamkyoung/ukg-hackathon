@@ -9,7 +9,7 @@ function RefinedInterests() {
       title="Getting to Know U"
       content={<RefInterestScreen />}
       left={"/interests"}
-      right={"/"}
+      right={"/text"}
       leftAction={() => console.log("left")}
       rightAction={() => console.log("right")}
     />

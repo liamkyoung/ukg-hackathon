@@ -7,8 +7,8 @@ function Pets() {
     <TemplatePage 
       title="Getting to Know U"
       content={<PetScreen />}
-      left={"/"}
-      right={"/"}
+      left={"/petbool"}
+      right={"/interests"}
       leftAction={() => console.log("left")}
       rightAction={() => console.log("right")}
     />

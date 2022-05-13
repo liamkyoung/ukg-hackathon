@@ -8,7 +8,7 @@ function PetBool() {
     <div>
       <TemplatePage 
         content={<PetBoolForm />} 
-        left={"/school"} right={"/"} 
+        left={"/school"} right={"/pets"}
         leftAction={() => console.log("left")} 
         rightAction={() => console.log("right")} 
       />

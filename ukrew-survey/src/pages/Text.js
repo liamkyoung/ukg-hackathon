@@ -10,10 +10,10 @@ function Text() {
         content={<TextForm />} 
         left={"/schoolbool"} right={"/petbool"} 
         leftAction={() => console.log("left")} 
-        rightAction={() => console.log("right")} 
+        rightAction={() => console.log("right")}
       />
     </div>
   )
 }
-
+ 
 export default Text
