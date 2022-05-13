@@ -8,6 +8,7 @@
     padding-top: 5%;
     padding-bottom: 5%;
     cursor: pointer;
+    width: 75%;
 }
 
 .interest-item:hover {
