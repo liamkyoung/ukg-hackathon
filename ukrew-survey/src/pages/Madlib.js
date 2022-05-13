@@ -8,7 +8,7 @@ function Madlib() {
       <TemplatePage 
         title={"Getting to Know U"}
         content={<MadlibForm />} 
-        left={"/"} right={"/login"} 
+        left={"/login"} right={"/schoolbool"} 
         leftAction={() => console.log("left")} 
         rightAction={() => console.log("right")}
       />
