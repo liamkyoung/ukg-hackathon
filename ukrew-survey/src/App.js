@@ -6,7 +6,10 @@ import SchoolBool from './pages/SchoolBool';
 import University from './pages/University';
 import PetBool from './pages/PetBool';
 import Text from './pages/Text';
+import Interests from './pages/Interests';
+import RefinedInterests from './pages/RefinedInterests.js'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Pets from './pages/Pets';
 
 // Add routes here. 
 function App() {
@@ -20,6 +23,9 @@ function App() {
         <Route path='/school' element={<University />} />
         <Route path='/petbool' element={<PetBool />} />
         <Route path='/text' element={<Text />} />
+        <Route path='/pets' element={<Pets />} />
+        <Route path='/interests' element={<Interests />} />
+        <Route path='/refInterests' element={<RefinedInterests />} />
       </Routes>
     </BrowserRouter>
   );

@@ -21,9 +21,10 @@
 }
 
 .title {
-    padding: 50px;
-    text-align: left;
-    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 35px;
 }
 
 .logo {
@@ -31,20 +32,31 @@
     padding-top: 3%;
 }
 
-.arrow {
-    color: #2CD5C4;
-    height: 50%;
-    padding: 5%;
-}
-
-.arrow-container {
+.button-container {
     display: flex;
-    justify-content: space-between;
-    flex-shrink: 1;
-    align-items: flex-end;
-    max-height: 20%;
+
 }
 
 .button {
     background-color: #2CD5C4;
+}
+
+.phrase {
+    color: #005151;
+    padding-bottom: 10px;
+}
+
+button{
+    align-self: center;
+    height: 30px;
+    width: 90px;
+    font-size: 12px;
+    background-color: #2CD5C4;
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+img.team{
+    max-width: 55%;
+    
 }
