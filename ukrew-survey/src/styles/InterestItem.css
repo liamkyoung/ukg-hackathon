@@ -1,0 +1,28 @@
+.interest-item {
+    background-color: #30CEBB;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+
+.interest-item:hover {
+    background-color: #006d6b;
+}
+
+.interest-item-true {
+    background-color: #006d6b;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+

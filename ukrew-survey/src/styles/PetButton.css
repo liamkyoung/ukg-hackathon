@@ -1,0 +1,29 @@
+.pet-button {
+    background-color: #30CEBB;
+    margin: 5% 15% 15% 10%;
+    border-radius: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.pet-button-true {
+    background-color: #006d6b;
+    margin: 5% 15% 15% 10%;
+    border-radius: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.pet-button:hover {
+    background-color: #006d6b;
+
+}
+
+.pet-name {
+    font-weight: 800;
+}
+
+.pet-image {
+    padding-top: 4px;
+}
+
