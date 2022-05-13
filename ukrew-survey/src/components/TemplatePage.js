@@ -12,17 +12,15 @@ function TemplatePage({ title, content, left, right, leftAction, rightAction }) 
             <div className='title'>
                 <h1>{title}</h1>
             </div>
-            {content}
+            <div className='content'>
+                {content}
+            </div>
             <div className='arrow-container'>
                 <Link to={left}>
-                    <button onClick={rightAction}>
-                        <ArrowNarrowLeftIcon className='arrow'/>
-                    </button>
+                    <ArrowNarrowLeftIcon className='arrow'/>
                 </Link>
                 <Link to={right}>
-                    <button onClick={leftAction}>
-                        <ArrowNarrowRightIcon className='arrow'/>
-                    </button>
+                    <ArrowNarrowRightIcon className='arrow'/>
                 </Link>
             </div>
         </div>

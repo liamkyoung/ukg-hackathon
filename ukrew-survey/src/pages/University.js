@@ -7,6 +7,7 @@ function University() {
   return (
     <div>
       <TemplatePage 
+        title="Getting to Know U"
         content={<UniversityForm />} 
         left={"/schoolbool"} right={"/petbool"} 
         leftAction={() => console.log("left")} 

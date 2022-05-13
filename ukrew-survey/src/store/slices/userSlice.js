@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    name: '',
+    email: '',
     basicInformation: {
         name: '',
         role: '',
         team: '',
         platform: '',
-        address: '',
+        handle: '',
     },
     college: {
         attending: true,
@@ -74,10 +74,22 @@ export const userSlice = createSlice({
         },
         updateFavorite: (state, action) => {
             state.favorite_interest = action.payload
+        },
+        addIcon: (state, action) => {
+            state.emoji = action.payload
+        },
+        setMessageText: (state, action) => {
+            state.custom_message = action.payload
+        },
+        updateSchool: (state, action) => {
+            state.college.name = action.payload
+        },
+        updateEmail: (state, action) => {
+            state.email = action.payload
         }
     }
 })
 
-export const { addBasicInfo, addInterests, deleteInterests, addDogs, addCats, addBirds, addSnakes, addFish, addRabbits, addHamsters, addOther, togglePets, updateFavorite } = userSlice.actions
+export const { updateEmail, updateSchool, addBasicInfo, addInterests, deleteInterests, addDogs, addCats, addBirds, addSnakes, addFish, addRabbits, addHamsters, addOther, togglePets, updateFavorite, addIcon, setMessageText } = userSlice.actions
 
 export default userSlice.reducer

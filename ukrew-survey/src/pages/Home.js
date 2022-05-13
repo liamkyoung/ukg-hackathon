@@ -6,15 +6,15 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className='background'>
-        <div className='main-container'>
-            <div className='title'>
+        <div className='main-container-home'>
+            <div className='title-home'>
                 <h1>UKrew Mingle</h1>
             </div>
             <div className='phrase'>
                 <h2>Where the U Meets the Krew</h2>
             </div>
-            <Link to="/madlib">
-            <button type="button"> Begin! </button>
+            <Link to="/login">
+            <button class="button"> Begin! </button>
             </Link>
             <div>
         <img class= "image team" alt='team vector image' src={process.env.PUBLIC_URL+"/assets/team.png"} />
