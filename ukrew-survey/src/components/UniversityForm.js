@@ -9,7 +9,7 @@ function UniversityForm() {
   const dispatch = useDispatch()
       
   return (
-    <div className='form-content'>
+    <div className='uniform-content'>
         <div className=''>Please type the full name of your college or university</div>
         <form>
             <div className='row'>

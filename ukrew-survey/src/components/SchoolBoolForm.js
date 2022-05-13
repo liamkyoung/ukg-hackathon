@@ -9,11 +9,11 @@ function SchoolBoolForm() {
   const dispatch = useDispatch()
       
   return (
-    <div className='form-content'>
+    <div className='schoolform-content'>
         <div className=''>Did you attend or are you attending a college/university?</div>
         <form>
-            <button class="button"onClick={() => setSchoolBool("Y")}>Yes</button>
-            <button class="button"onClick={() => setSchoolBool("N")}>No</button>  
+            <button class="schoolButton"onClick={() => setSchoolBool("Y")}>Yes</button>
+            <button class="schoolButton"onClick={() => setSchoolBool("N")}>No</button>  
         </form>
     </div>
   )

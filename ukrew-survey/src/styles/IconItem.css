@@ -4,8 +4,8 @@
     border-radius: 20px;
     padding: 2px;
     cursor: pointer;
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
 }
 
 .icon-button-true {
@@ -14,8 +14,8 @@
     border-radius: 15px;
     padding: 2px;
     cursor: pointer;
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
 
 }
 
@@ -25,6 +25,6 @@
 }
 
 .icon-image {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 

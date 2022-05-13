@@ -7,8 +7,9 @@ function Text() {
   return (
     <div>
       <TemplatePage 
+        title="Getting to Know U"
         content={<TextForm />} 
-        left={"/schoolbool"} right={"/petbool"} 
+        left={"/refinterests"} right={"/icons"} 
         leftAction={() => console.log("left")} 
         rightAction={() => console.log("right")}
       />

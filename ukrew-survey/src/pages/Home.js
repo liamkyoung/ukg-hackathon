@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <div className='background'>
+    <div className='home-background'>
         <div className='main-container-home'>
             <div className='title-home'>
                 <h1>UKrew Mingle</h1>
@@ -14,10 +14,10 @@ function Home() {
                 <h2>Where the U Meets the Krew</h2>
             </div>
             <Link to="/madlib">
-            <button type="button"> Begin! </button>
+            <button class="begin"> Begin! </button>
             </Link>
             <div>
-        <img class= "image team" alt='team vector image' src={process.env.PUBLIC_URL+"/assets/team.png"} />
+        <img class="team" alt='team vector image' src={process.env.PUBLIC_URL+"/assets/team.png"} />
     </div>
         </div>
         <div className='logo'>

@@ -9,11 +9,11 @@ function PetBoolForm() {
   const dispatch = useDispatch()
       
   return (
-    <div className='form-content'>
+    <div className='petform-content'>
         <div className=''>Do you have pet(s)?</div>
         <form>
-            <button class="button"onClick={() => setPetBool("Y")}>Yes</button>
-            <button class="button"onClick={() => setPetBool("N")}>No</button>  
+            <button class="petButton"onClick={() => setPetBool("Y")}>Yes</button>
+            <button class="petButton"onClick={() => setPetBool("N")}>No</button>  
         </form>
     </div>
   )

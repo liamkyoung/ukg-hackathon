@@ -15,7 +15,7 @@ function IconItem({ type, image }) {
     }}>
         <div>
             <div className='icon-image'>
-                <img alt={type} src={image} width="120" height="120" />
+                <img alt={type} src={image} width="80" height="80" />
             </div>
         </div>
     </button>

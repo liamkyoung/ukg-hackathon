@@ -15,7 +15,7 @@ input:focus {
     outline: none;
 }
 
-.form-content {
+.madform-content {
     margin: 20px 20px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -41,3 +41,12 @@ input:focus {
     text-align: center;
 }
 
+button.submit{
+    background-color: #2CD5C4;
+    height: 30px;
+    width: 90px;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+
+}

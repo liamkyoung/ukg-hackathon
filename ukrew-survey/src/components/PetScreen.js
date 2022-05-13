@@ -10,7 +10,7 @@ function PetScreen() {
   return (
     <div>
         <h1>Please select your pets</h1>
-        <div className='container'>
+        <div className='petcontainer'>
             <PetButton type={"Dogs"} image={url+'dogs.png'} handler={addDogs}/>
             <PetButton type={"Cats"} image={url+'cats.png'} handler={addCats}/>
             <PetButton type={"Birds"} image={url+'birds.png'} handler={addBirds}/>

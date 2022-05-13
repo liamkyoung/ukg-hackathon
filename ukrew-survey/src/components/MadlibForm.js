@@ -19,7 +19,7 @@ function MadlibForm() {
 //   const [handle, setHandle] = useState('')
       
   return (
-    <div className='form-content'>
+    <div className='madform-content'>
         <div className=''>Tell us a little bit about yourself...</div>
         <form>
             <div className='row'>
@@ -79,7 +79,7 @@ function MadlibForm() {
                 </span>
                 <div>.</div>
                 <button
-                    type="submit"
+                    class="submit"
                     onClick={(e) => {
                         console.log(userInfo)
                         dispatch(addBasicInfo(userInfo))
