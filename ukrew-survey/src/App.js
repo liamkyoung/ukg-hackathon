@@ -8,6 +8,7 @@ import PetBool from './pages/PetBool';
 import Text from './pages/Text';
 import Interests from './pages/Interests';
 import RefinedInterests from './pages/RefinedInterests.js'
+import Rankings from './pages/Rankings'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Pets from './pages/Pets';
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/text' element={<Text />} />
         <Route path='/interests' element={<Interests />} />
         <Route path='/refInterests' element={<RefinedInterests />} />
+        <Route path='/rankings/:email' element={<Rankings />} />
       </Routes>
     </BrowserRouter>
   );
